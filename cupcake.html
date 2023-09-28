@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="cupcakeStyle.css" />
+</head>
+<body>
+    <!-- Add an audio element with autoplay -->
+
+    <h1>Happy</h1>
+    <!-- Add an id to the cupcake div for easier selection -->
+    <div class="cupcake" id="cupcake">
+        <!-- Add a click me arrow -->
+        <div class="click-me-arrow"></div>
+    </div>
+    <h1>Birthday!</h1>
+
+    <!-- JavaScript to handle the click event and redirect -->
+    <script>
+        // Get a reference to the cupcake element by its id
+        const cupcake = document.getElementById("cupcake");
+
+        // Add a click event listener to the cupcake element
+        cupcake.addEventListener("click", () => {
+            // Redirect to the birthdayWishes.html page
+            window.location.href = "bdaycard.html";
+        });
+    </script>
+</body>
+</html>

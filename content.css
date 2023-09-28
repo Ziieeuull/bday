@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FEEAE6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.question {
+    background-color: #FFB6C1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #3C2A21;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #E8A5B7;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #DB4557;
+}
+
+/* Styling for the audio element */
+audio {
+    display: none; /* Hide the audio player */
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between squares */
+}
+
+/* Style for each square container */
+.image-square {
+    width: 200px; /* Adjust the width and height as needed */
+    height: 200px;
+    background-color: #E8A5B7; /* Background color for the square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflowing content within the square */
+}
+
+/* Style for the image inside each square */
+.image-square img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Scale and crop the image to fit the square */
+}

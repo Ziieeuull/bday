@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="bdaystyle.css" />
+    <style>
+        /* Style for the arrow */
+        .arrow {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Wrap the card in an anchor tag with a link to the next page -->
+    <a href="ph.html" class="card-link">
+        <div class="card">
+            <div class="outside">
+                <div class="front">
+                    <!-- Add the arrow before the "Happy Birthday" text -->
+                    <p><span class="arrow">&#10148;</span> Happy Birthday</p>
+                    <div class="cake">
+                        <div class="top-layer"></div>
+                        <div class="middle-layer"></div>
+                        <div class="bottom-layer"></div>
+                        <div class="candle"></div>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+            <div class="inside">
+                <p>Wishing you a Very happy birthday Elisa Nadia</p>
+                <h1>&#127873;</h1>
+            </div>
+        </div>
+    </a>
+
+    <!-- Add an audio element with autoplay -->
+    <audio controls autoplay>
+        <source src="hbd.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Princess Elisa Nadia?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="content.css">
+</head>
+<body>
+    <div class="question">
+        <h1>Are you Princess Elisa Nadia?</h1>
+        <div class="buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+    <!-- Add an audio element with autoplay -->
+    <audio autoplay>
+        <source src="hbd.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Multiple square containers with photos -->
+    <div class="image-grid">
+        <div class="image-square">
+            <img src="e1.jpg" alt="Image 1">
+        </div>
+        <div class="image-square">
+            <img src="e2.jpg" alt="Image 2">
+        </div>
+        <div class="image-square">
+            <img src="e3.jpg" alt="Image 3">
+        </div>
+        <!-- Add more image-square divs as needed -->
+    </div>
+
+    <script>
+        const yesButton = document.getElementById("yesButton");
+        const noButton = document.getElementById("noButton");
+
+        yesButton.addEventListener("click", () => {
+            // Redirect to the next page when "Yes" is clicked
+            window.location.href = "cupcake.html";
+        });
+
+        noButton.addEventListener("click", () => {
+            alert("Thank you for visiting!");
+        });
+    </script>
+</body>
+</html>
